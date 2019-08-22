@@ -109,6 +109,10 @@ main article img:first-child{
     height: auto;
 }
 main article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
     
 }
