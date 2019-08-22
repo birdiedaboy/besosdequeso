@@ -159,6 +159,7 @@ article img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10%;
 }
 
 footer{
