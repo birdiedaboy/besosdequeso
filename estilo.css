@@ -47,6 +47,9 @@ table {
 
 /* Birdiedaboy */
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -92,18 +95,41 @@ nav a:hover {
 
 main{
     background-color: black;
-    padding: 25%;
+    flex: 1 1 auto;
+    background-image: url(img/BDQ-6890.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main article img:first-child{
+    max-width: 100%;
+    height: auto;
+}
+main article{
+    
+    
+}
+main article h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 5em;
+    color: #DAE7F3;
+    text-shadow: 2px 2px 4px #212121;
 }
 
 footer{
     padding: 5em;
     background-color: #8390CC;
     bottom:0;
+    align-items: flex-end;
     
 }
 
 
-/** Media Querys para diferentes tamaños */
+/********* Parte Responsiva ***********/
+
 @media all and (max-width: 990px) {
   header {
     flex-direction: column;
@@ -125,7 +151,7 @@ footer{
  
   header h1 {
     margin: .25em 0;
-    align-self: left; /* align the logo to the left side of 'flex-container' */
+    align-self: left; /* alinear logo lado izq 'flex-container' */
 }
   
   nav {
