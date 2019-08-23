@@ -134,18 +134,26 @@ main article nav a{
 #OX{
     background-color: #F8C778;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     padding: 10%
 }
-
-article h2{
+article asside:nth-child(odd){
+    margin-right: 10%;
+}
+article asside:nth-child(even){
+    margin-left: 10%;
+}
+article asside h2{
     font-family: 'Roboto Mono', monospace;
     font-size: 2em;
     padding-bottom: 2em;
 }
+article asside p{
+     font-family: 'Roboto Mono', monospace;
+}
 article img{
-    width: 50vw;
+    width: 45vw;
 }
 #PA{
     background-color: #475B98;
