@@ -114,7 +114,7 @@ main article:first-child{
 }
 main article:first-child h1{
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 5em;
+    font-size: 6vw;
     color: #DAE7F3;
     text-shadow: 2px 2px 4px #212121;
 }
@@ -122,13 +122,13 @@ main article nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 2vw;
 }
 
 main article nav a{
     font-family: 'Roboto Mono', monospace;
     color: aliceblue;
-    font-size: 1.5em
+    font-size: 1.5vw
 }
 
 #OX{
@@ -145,12 +145,15 @@ article asside:nth-child(even){
     margin-left: 10%;
 }
 article asside h2{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-    padding-bottom: 2em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 5vw;
+    padding-bottom: 3vw;
+    text-align: center;
 }
 article asside p{
      font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    font-size: 1.3vw;
 }
 article img{
     width: 45vw;
@@ -171,14 +174,23 @@ article img{
 }
 
 footer{
-    padding: 5em;
+    
     background-color: #8390CC;
-    bottom:0;
-    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    
+}
+footer address{
+}
+footer nav{
     
 }
 
-
+footer nav p{
+    padding-left: 5vw
+}
 /********* Parte Responsiva ***********/
 
 @media all and (max-width: 990px) {
@@ -190,11 +202,15 @@ footer{
   margin-top: .50em;
 }
   
-  nav  {
+  header nav  {
     width: 100%;
     justify-content: space-around;
   }
 }
+
+ main{
+        min-height: 50vw;
+    }
 
 
 /* El mas chiquillo */
@@ -205,19 +221,38 @@ footer{
     align-self: left; /* alinear logo lado izq 'flex-container' */
 }
   
-  nav {
+  header nav {
     flex-direction: column;
   }
   
-  nav a { 
+  header nav a { 
     text-align: center; 
     padding: 10px;
     border-top: 1px solid rgba(255,255,255,0.3); 
     border-bottom: 1px solid rgba(0,0,0,0.1); 
   }
   
-  nav a:last-child {
+  header nav a:last-child {
     border-bottom: none; 
   }
+    main{
+        min-height: 100vw;
+    }
+    main article:first-child h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15vw;
+    color: #DAE7F3;
+    text-shadow: 2px 2px 4px #212121;
+    text-align: center;
+}
+    main article nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    main article nav a{
+        font-size: 6vw;
+    }
 }
 
