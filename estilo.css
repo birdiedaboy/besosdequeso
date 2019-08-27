@@ -179,17 +179,37 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     
 }
 footer address{
+    width: 55vw;
 }
 footer nav{
     
+    display: flex;
+    flex-flow: row-reverse;
+   
+    
 }
 
-footer nav p{
-    padding-left: 5vw
+footer nav a{
+ 
+    width:5%;
+    height: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+footer nav a svg{
+   width: 100%;
+    height: 100%;
+    color: #F8C778;
+}
+.instasvg{
+
+width: 100%;
 }
 /********* Parte Responsiva ***********/
 
